@@ -1,7 +1,7 @@
 # CS22S027-DL-Assignment-1
 CS6910: Deep Learning Assignmnet 1, Jan-May 2024
 
-This project is an implementation of a neural network from scratch using python. It is designed to be flexible, allowing adjustments to various parameters such as dataset selection (mnist and Fashion-mnist), network architecture, activation functions, and experiment tracking using wandb.
+This project is an implementation of a neural network from scratch using Python. It is designed to be flexible, allowing adjustments to various parameters such as dataset selection (mnist and Fashion-mnist), network architecture, activation functions, and experiment tracking using wandb.
 
 
 ### Dependencies
@@ -24,7 +24,7 @@ To clone the repository directly to you local machine, ensure git is installed, 
 `git clone https://github.com/IT527/CS22S027-DL-Assignment-1.git`
 </br>
 </br>
-Alternatively, you can download the entire repository as a zip file from the Download ZIP option provided by github.
+Alternatively, you can download the entire repository as a .zip file from the Download ZIP option provided by github.
 
 
 ### Usage
@@ -63,10 +63,13 @@ On execution of the file as shown above, loss and accuracies for the train, vali
 To access plots in wandb, ensure to replace the given key with your wandb API key.</br>
 Look for line 14 in train.py file and enter your API key in the key variable.
 
+### Adding new optimisers and activation
+To add any new optimiser, you can create a class for it which contain the function grad_update() specifying the update rule, and add it in the file optimisers.py </br>
+Similarly, any new activation can be added by creating a function for it in the file activation.py </br>
 
 ### Additional Resources and help
 Included in the project is DL_Assignment_1_.ipynb, compatible with Jupyter Notebook or Google Colab. It encompasses neural network codes, sweep operations, and logging utilities like confusion matrices and dataset images. For tailored runs, you may need to adjust configurations and uncomment sections in the notebook to log specific metrics or plots. The notebook serves as a practical reference for understanding the project's workflow. </br>
-All the plots are generated and logged to wandb using this file only, whle for a new configuration one can run the train.py file as shown above.
+All the plots are generated and logged to wandb using this file only, while for a new configuration one can run the train.py file as shown above.
 </br>
 </br>
 The sweep details for choosing the hyperparameters, runs, sample images, and related plots can be viewed at: ``
