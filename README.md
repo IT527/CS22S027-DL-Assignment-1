@@ -1,6 +1,11 @@
 # CS22S027-DL-Assignment-1
 CS6910: Deep Learning Assignmnet 1, Jan-May 2024
 
+### Details
+Name: Ishaan Taneja </br>
+Roll No.: CS22S027 </br>
+</br>
+
 This project is an implementation of a neural network from scratch using Python. It is designed to be flexible, allowing adjustments to various parameters such as dataset selection (mnist and Fashion-mnist), network architecture, activation functions, and experiment tracking using wandb.
 
 
