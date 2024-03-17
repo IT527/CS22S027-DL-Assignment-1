@@ -1,0 +1,6 @@
+numpy
+wandb
+tensorflow
+keras
+tqdm
+joblib
