@@ -22,6 +22,9 @@ epochs = args.epochs
 weight_decay = args.weight_decay
 optimiser = args.optimizer
 eta = args.learning_rate
+beta1 = args.beta1 #For adam and nadam
+beta2 = args.beta2 #For adam and nadam
+beta = args.beta #For rmsprop
 batch = args.batch_size
 loss_type = args.loss
 
@@ -225,16 +228,16 @@ def network_train():
     if run.config.optimiser == 'nag':
         opti = nestrov_gradient_descent(num_layers = run.config.num_layers, eta=run.config.learning_rate, beta=.90, weight_decay=run.config.weight_decay)
     elif run.config.optimiser == 'rmsprop':
-        opti = RMSprop_gradient_descent(num_layers = run.config.num_layers, eta=run.config.learning_rate, beta=.90, weight_decay=run.config.weight_decay)
+        opti = RMSprop_gradient_descent(num_layers = run.config.num_layers, eta=run.config.learning_rate, beta=beta, weight_decay=run.config.weight_decay)
     elif run.config.optimiser == 'sgd':
         opti = basic_gradient_descent(num_layers = run.config.num_layers, eta=run.config.learning_rate, weight_decay=run.config.weight_decay)
     elif run.config.optimiser == 'momentum':
         opti = momentum_gradient_descent(num_layers = run.config.num_layers, eta=run.config.learning_rate, beta=.99,
                                        weight_decay=run.config.weight_decay)
     elif run.config.optimiser == 'adam':
-        opti = adam_gradient_descent(num_layers = run.config.num_layers, eta=run.config.learning_rate, weight_decay=run.config.weight_decay)
+        opti = adam_gradient_descent(num_layers = run.config.num_layers, eta=run.config.learning_rate, weight_decay=run.config.weight_decay, beta1 = beta1, beta2 = beta2)
     elif run.config.optimiser == 'nadam':
-        opti = nadam_gradient_descent(num_layers = run.config.num_layers, eta=run.config.learning_rate, weight_decay=run.config.weight_decay)
+        opti = nadam_gradient_descent(num_layers = run.config.num_layers, eta=run.config.learning_rate, weight_decay=run.config.weight_decay, beta1 = beta1, beta2 = beta2)
 
     final_neural_network=initialize_fit_model(epochs=run.config.epoch, batch=run.config.batch_size, output_dim=10,
            opt=opti, weight_init=run.config.weight_init, activation=run.config.activation, num_layers = run.config.num_layers, hidden_layer_sizes = run.config.hidden_layer_sizes , loss_type=run.config.loss)
