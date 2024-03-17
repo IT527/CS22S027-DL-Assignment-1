@@ -18,7 +18,7 @@ To download all the dependencies, you can run: `pip install -r requirements.txt`
 
 
 ### Clone and Download Instructions
-Clone the repository or download the project files. Ensure that python and other required packages are installed in the project directory.
+Clone the repository or download the project files. Ensure that python and other required packages are installed in the project directory.</br>
 To clone the repository directly to you local machine, ensure git is installed, run the command: 
 </br>
 `git clone https://github.com/IT527/CS22S027-DL-Assignment-1.git`
@@ -31,7 +31,7 @@ Alternatively, you can download the entire repository as a zip file from the Dow
 To run the python script, navigate to the project directory and run: `python train.py [OPTIONS]`
 </br>
 The 'OPTIONS' can take different values for parameters to select dataset, modify network architecture, select activation function and many more.</br>
-The possible arguments and respective values for 'OPTIONS' are shown in the table below:
+The possible arguments and respective values for 'OPTIONS' are shown in the table below:</br>
 
 | Name | Default Value | Description |
 | :---: | :-------------: | :----------- |
@@ -59,16 +59,16 @@ An example run with dataset "mnist" and number of hidden layers as 5 : `python t
 
 </br>
 
-On execution of the file as shown above, loss and accuracies for the train, validation and test dataset will be printed on the terminal. Along with it, the plots highlighting the loss and accuracies for each epochs, for both train and validation dataset, will be logged onto the wandb project.
-To access plots in wandb, ensure to replace the given key with your wandb API key.
+On execution of the file as shown above, loss and accuracies for the train, validation and test dataset will be printed on the terminal. Along with it, the plots highlighting the loss and accuracies for each epochs, for both train and validation dataset, will be logged onto the wandb project.</br>
+To access plots in wandb, ensure to replace the given key with your wandb API key.</br>
 Look for line 14 in train.py file and enter your API key in the key variable.
 
 
 ### Additional Resources and help
-Included in the project is DL_Assignment_1_.ipynb, compatible with Jupyter Notebook or Google Colab. It encompasses neural network codes, sweep operations, and logging utilities like confusion matrices and dataset images. For tailored runs, you may need to adjust configurations and uncomment sections in the notebook to log specific metrics or plots. The notebook serves as a practical reference for understanding the project's workflow. 
+Included in the project is DL_Assignment_1_.ipynb, compatible with Jupyter Notebook or Google Colab. It encompasses neural network codes, sweep operations, and logging utilities like confusion matrices and dataset images. For tailored runs, you may need to adjust configurations and uncomment sections in the notebook to log specific metrics or plots. The notebook serves as a practical reference for understanding the project's workflow. </br>
 All the plots are generated and logged to wandb using this file only, whle for a new configuration one can run the train.py file as shown above.
-
-
+</br>
+</br>
 The sweep details for choosing the hyperparameters, runs, sample images, and related plots can be viewed at: ``
 
 
