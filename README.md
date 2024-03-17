@@ -12,9 +12,9 @@ This project is an implementation of a neural network from scratch using Python.
  - tqdm library (for fast, extensible progress bar for loops and iterations in python)
  - joblib library (for efficiently dealing with large numpy arrays)
  - tensorflow and keras library (for downloading mnist and fashion_mnist dataset)
- - matplotlib (If you want to plot confusion matrix)
+ - matplotlib (Optional: if you want to plot confusion matrix)
 
-To download all the dependencies, you can run: `pip install -r requirements.txt`
+To download all the necessary dependencies, you can run: `pip install -r requirements.txt`
 
 
 ### Clone and Download Instructions
