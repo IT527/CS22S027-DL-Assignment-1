@@ -19,7 +19,8 @@ To download all the dependencies, you can run: `pip install -r requirements.txt`
 
 ### Clone and Download Instructions
 Clone the repository or download the project files. Ensure that python and other required packages are installed in the project directory.
-To clone the repository directly to you local machine, ensure git is installed, run the command:
+To clone the repository directly to you local machine, ensure git is installed, run the command: 
+</br>
 `git clone https://github.com/IT527/CS22S027-DL-Assignment-1.git`
 Alternatively, you can download the entire repository as a zip file from the Download ZIP option provided by github.
 
