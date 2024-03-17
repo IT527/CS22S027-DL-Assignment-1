@@ -72,7 +72,7 @@ Included in the project is DL_Assignment_1_.ipynb, compatible with Jupyter Noteb
 All the plots are generated and logged to wandb using this file only, while for a new configuration one can run the train.py file as shown above.
 </br>
 </br>
-The sweep details for choosing the hyperparameters, runs, sample images, and related plots can be viewed at: ``
+The sweep details for choosing the hyperparameters, runs, sample images, and related plots can be viewed at: `https://api.wandb.ai/links/cs22s027/dljlgm0n`
 
 
 
