@@ -22,6 +22,7 @@ Clone the repository or download the project files. Ensure that python and other
 To clone the repository directly to you local machine, ensure git is installed, run the command: 
 </br>
 `git clone https://github.com/IT527/CS22S027-DL-Assignment-1.git`
+</br>
 Alternatively, you can download the entire repository as a zip file from the Download ZIP option provided by github.
 
 
