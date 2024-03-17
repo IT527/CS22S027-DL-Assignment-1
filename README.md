@@ -23,12 +23,14 @@ To clone the repository directly to you local machine, ensure git is installed, 
 </br>
 `git clone https://github.com/IT527/CS22S027-DL-Assignment-1.git`
 </br>
+</br>
 Alternatively, you can download the entire repository as a zip file from the Download ZIP option provided by github.
 
 
 ### Usage
 To run the python script, navigate to the project directory and run: `python train.py [OPTIONS]`
-The 'OPTIONS' can take different values for parameters to select dataset, modify network architecture, select activation function and many more.
+</br>
+The 'OPTIONS' can take different values for parameters to select dataset, modify network architecture, select activation function and many more.</br>
 The possible arguments and respective values for 'OPTIONS' are shown in the table below:
 
 | Name | Default Value | Description |
